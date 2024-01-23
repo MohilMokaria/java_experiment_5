@@ -1,0 +1,39 @@
+/* 
+    Created on : Dec 20, 2023, 11:12:34 AM
+    Author     : mohilmokaria
+*/
+
+html {
+    font-family: Arial, sans-serif;
+    padding: 3%;
+}
+
+hr{
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.sendbtn{
+    width: 40%;
+}
+
+.delete {
+    height: 35px !important;
+    width: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.delete span {
+    font-size: 20px;
+}
+
+#NewForm{
+    display : block;
+}
+
+#UpdateForm {
+    display: none;
+}
