@@ -82,7 +82,6 @@ public class NewNote extends HttpServlet {
 
         try {
             Class.forName(jdbcUri);
-
             try (Connection con = DriverManager.getConnection(dbUri, dbId, dbPass)) {
                 try (PreparedStatement ps = con.prepareStatement("INSERT INTO notes(who, title, body, note_time) values(?,?,?,?)")) {
                     ps.setString(1, who);

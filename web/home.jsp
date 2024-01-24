@@ -1,3 +1,4 @@
+
 <%@page import="java.sql.Timestamp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="myClass.Note" %>
@@ -160,13 +161,12 @@
             </div>
         </div>
     </section>
-
     <script>
-        var newFormSection = document.getElementById('NewForm');
-        var formSection = document.getElementById('UpdateForm');
-
         function showEditForm(id, title, body) {
-            newFormSection.style.display = 'none'
+            var newFormSection = document.getElementById('NewForm');
+            var formSection = document.getElementById('UpdateForm');
+
+            newFormSection.style.display = 'none';
             formSection.style.display = 'block';
 
             // Scroll to the top of the page
@@ -185,11 +185,13 @@
         }
 
         function cancelEdit() {
-            newFormSection.style.display = 'block'
+            var newFormSection = document.getElementById('NewForm');
+            var formSection = document.getElementById('UpdateForm');
+
+            newFormSection.style.display = 'block';
             formSection.style.display = 'none';
         }
     </script>
-
 
     <% } else { %>
     <p>Please log in to access the chat page.</p>
